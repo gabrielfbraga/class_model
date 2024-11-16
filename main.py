@@ -1,7 +1,11 @@
-from university import university
+from department import Department
+from university import University
+from department import Department
 
 # criando uma instância da classe University
-uni = university("Escola Superior de Tecnologia", "Amazonas")
+uni = University("Escola Superior de Tecnologia", "Amazonas")
+
+dep = Department("Professores:")
 
 # exibindo as informações da universidade
 print(f"Universidade: {uni.name}, Localização: {uni.location}")
@@ -24,3 +28,13 @@ uni.add_department(type("Department", (), {"name": "Sistemas de Informação"}))
 print("Departamentos:")
 for dept in uni.list_departments():
     print(f"- {dept}")
+
+print(dep.name)
+dep.add_teacher(type("Teacher", (), {"name": "Jucimar"}))
+dep.add_teacher(type("Teacher", (), {"name": "Elloa"}))
+dep.add_teacher(type("Teacher", (), {"name": "Ponciano"}))
+
+for dept in dep.list_teachers():
+    print(f"- {dept}")
+
+

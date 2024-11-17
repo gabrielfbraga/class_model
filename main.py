@@ -1,6 +1,8 @@
 from department import Department
 from university import University
 from department import Department
+from teacher import Teacher
+from discipline import Disciplines
 
 # criando uma instância da classe University
 uni = University("Escola Superior de Tecnologia", "Amazonas")

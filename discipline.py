@@ -6,9 +6,11 @@ class Disciplines:
             "Engenharia de Software", "Sistemas Operacionais", "Teoria dos Grafos", "Inteligência Artificial",
             "Redes Neurais", "Compiladores", "Arquitetura de Computadores", "Linguagens Formais e Autômatos",
             "Teoria da Computação", "Processamento de Imagens", "Desenvolvimento Web", "Segurança da Informação",
-            "Sistemas Distribuídos", "Interfaces de Usuário", "Prática em Programação", "Ética em TI", "Gestão de Projetos de TI"
+            "Sistemas Distribuídos", "Interfaces de Usuário", "Prática em Programação", "Ética em TI",
+            "Gestão de Projetos de TI"
         ]
     
     def __str__(self):
         # Retorna a lista de disciplinas como uma string formatada
+        print("Disciplinas:")
         return "\n".join(self.disciplinas)
